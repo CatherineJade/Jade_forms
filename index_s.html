@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="container">
+    
+        <!--LOG IN-->
+        <form class="sign">
+            <h1 class="Label">SIGN UP</h1>
+            <p>Email or Username</p>
+            <input type="text" class="user" id="s_username" placeholder="Username"> <br>
+            <p>Password</p>
+            <input type="password" class="pass" id="s_password" placeholder="Password"> <br>
+            <button type="button" onclick="signup()">Sign Up</button>
+
+            <p class="eh">Already have an account? <span class="tag"> &nbsp <a href="index_l.html">Log In</a></span></p>
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        /* background-image: url(14.jpg); */
+        background-image: linear-gradient(to right, rgb(97, 95, 201) , rgb(4, 84, 95));
+        background-size: cover;
+        padding: 3% 33%;
+    }
+
+    form{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: solid 2px black;
+        border-radius: 23px;
+        box-shadow: 5px 10px 10px 5px rgb(35, 24, 24);
+   
+    }
+
+    .sign{
+        background-image: url(8.jpg);
+        width: 30%;
+        padding: 20px;
+        background-size: cover;
+        color: antiquewhite;
+        }
+
+    .Label{
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding-top: 20px;
+        text-shadow: 5px 5px 8px rgb(26, 26, 26);
+        -webkit-text-stroke: 1px rgb(1, 1, 26);
+    }
+
+    input{
+        width: 70%;
+        height: 30px;
+        padding: 5px;
+        backdrop-filter: blur(15px);
+        background: transparent;
+        border: 1px solid;
+        font-size: large;
+    }
+
+    ::placeholder{
+        color: antiquewhite;
+        font-size: 15px;
+    }
+
+    button{
+        width: 50%;
+        padding: 10px 12px;
+        font-weight: bold;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        background-color: rgb(0, 0, 119);
+        border: 1px solid black;
+        border-radius: 20px;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 2px;
+        background-image: linear-gradient(to right, rgb(26, 18, 136) , rgb(25, 177, 197));
+    }
+
+    p{
+        font-weight: bold;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 15%;
+        margin-top: 28px;
+        margin-bottom: 10px;
+        text-shadow: 5px 5px 4px rgb(0, 2, 27);
+        -webkit-text-stroke: 0.5px rgb(1, 1, 26);
+
+    }
+
+    .eh{
+        margin-bottom: 14%;
+        /* color: rgb(217, 224, 236); */
+        color: #ddd;;
+        font-size: 20px;
+        margin-left: 10%;
+        -webkit-text-stroke: 1px rgb(0, 0, 8);
+    }
+
+    a{
+        text-decoration: none;
+        color: #a2d2eb; 
+        font-weight: bold;
+        -webkit-text-stroke: 0.3px rgb(0, 0, 8);
+        /* color: rgb(4, 38, 61); */
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #00ccff;
+        
+    }
+
+    button:hover{
+        border: 2px solid;
+    }
+
+    input:hover{
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+</style>
+
+<script src="script.js"></script>
